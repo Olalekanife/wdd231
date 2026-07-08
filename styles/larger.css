@@ -1,0 +1,84 @@
+/* ==========================================
+   Larger Screen Styles
+   ========================================== */
+
+@media screen and (min-width: 768px) {
+
+    /* ---------- Header ---------- */
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        width: auto;
+        background: transparent;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        padding: .75rem 1.25rem;
+        border-radius: 8px;
+    }
+
+    .navigation a:hover,
+    .navigation .active {
+        background: var(--secondary-color);
+    }
+
+    /* ---------- Main ---------- */
+
+    main {
+        padding: 2rem;
+    }
+
+    .top-sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+    .card img {
+        width: 260px;
+    }
+
+    /* ---------- Certificate ---------- */
+
+    .certificate {
+        width: 100%;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    #course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer {
+        padding: 2.5rem;
+    }
+
+    .social {
+        gap: 2rem;
+    }
+
+}

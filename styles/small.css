@@ -1,0 +1,278 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+
+:root {
+    --primary-color: #0f172a;
+    --secondary-color: #2563eb;
+    --accent-color: #f59e0b;
+    --background-color: #f8fafc;
+    --surface-color: #ffffff;
+    --text-color: #1e293b;
+    --border-color: #dbe3eb;
+
+    --completed-bg: #d1fae5;
+    --completed-text: #065f46;
+
+    --font-family: "Poppins", sans-serif;
+
+    --shadow: 0 5px 15px rgba(0, 0, 0, .08);
+    --radius: 12px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+header {
+    background: var(--primary-color);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: .9rem 1rem;
+
+    position: relative;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.logo-name img {
+    width: 45px;
+}
+
+.logo-name span {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* ------------------------------
+   Hamburger
+------------------------------ */
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "\2630";
+}
+
+#menu.open::before {
+    content: "\2715";
+}
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--primary-color);
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    transition: .3s;
+}
+
+.navigation a:hover,
+.navigation .active {
+    background: var(--secondary-color);
+}
+
+/* ------------------------------
+   Main
+------------------------------ */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.card h2 {
+    background: var(--primary-color);
+    color: white;
+    margin: 0;
+    padding: .9rem;
+    font-size: 1.1rem;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.card img {
+    width: 220px;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+}
+
+/* ------------------------------
+   Course Buttons
+------------------------------ */
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .8rem;
+
+    padding: 1rem;
+}
+
+.buttons button {
+    border: none;
+    background: var(--secondary-color);
+    color: white;
+
+    padding: .7rem 1.4rem;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.buttons button:hover {
+    background: var(--primary-color);
+}
+
+/* ------------------------------
+   Course Cards
+------------------------------ */
+
+#course-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.course-card {
+    background: white;
+    border-left: 6px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.course-card.completed {
+    background: var(--completed-bg);
+    color: var(--completed-text);
+    border-left-color: var(--completed-text);
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+/* ------------------------------
+   Credits
+------------------------------ */
+
+.credits {
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social a {
+    font-size: 2rem;
+    transition: .3s;
+}
+
+.social a:hover {
+    color: var(--accent-color);
+}
+
+footer p {
+    margin: .4rem 0;
+}

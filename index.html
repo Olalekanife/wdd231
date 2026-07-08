@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 231 | Home | Ifeoluwa Olalekan</title>
+
+    <meta name="description"
+        content="WDD 231 Course Home Page for Ifeoluwa Olalekan showcasing web development coursework and certificate courses.">
+
+    <meta name="author" content="Ifeoluwa Olalekan">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-name">
+            <img src="images/logo.svg" alt="Website Logo" width="48" height="48">
+            <span>Ifeoluwa Olalekan</span>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+        </button>
+
+        <nav id="navMenu">
+
+            <ul class="navigation">
+
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="chamber/index.html">Chamber</a>
+                </li>
+
+                <li>
+                    <a href="final/">Final</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <div class="top-sections">
+
+            <section class="card">
+
+                <h2>About Me</h2>
+
+                <p>
+                    I am a student passionate about technology, web development,
+                    and creating meaningful digital experiences. I enjoy learning
+                    new skills, solving real-world problems, and continuously
+                    improving as a developer. Outside of coding, I enjoy listening
+                    to hip-hop music and exploring new ideas that help me grow both
+                    personally and professionally.
+                </p>
+
+            </section>
+
+            <section class="card">
+
+                <h2>Student Photo</h2>
+
+                <img src="images/profile.webp" alt="Portrait of Ifeoluwa Olalekan">
+
+            </section>
+
+        </div>
+
+        <section class="certificate card">
+
+            <h2>Web &amp; Computer Programming Certificate</h2>
+
+            <div class="buttons">
+
+                <button type="button" id="all">
+                    All Courses
+                </button>
+
+                <button type="button" id="wdd">
+                    WDD Courses
+                </button>
+
+                <button type="button" id="cse">
+                    CSE Courses
+                </button>
+
+            </div>
+
+            <div id="course-container"></div>
+
+            <p class="credits">
+                Total Credits:
+                <span id="credit-total"></span>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social">
+
+            <a href="https://github.com/Olalekanife" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+            <a href="#" aria-label="X (Twitter)">
+
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </a>
+
+            <a href="#" aria-label="Facebook">
+
+                <i class="fa-brands fa-facebook"></i>
+
+            </a>
+
+        </div>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Ifeoluwa Olalekan &bull; Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
