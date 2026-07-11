@@ -1,0 +1,102 @@
+/* ==========================================
+   Desktop Styles
+========================================== */
+
+@media screen and (min-width: 768px) {
+
+    /* ==========================
+       Header
+    ========================== */
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        width: auto;
+        background: transparent;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: .75rem;
+    }
+
+    .navigation a {
+        padding: .75rem 1rem;
+        border-radius: 8px;
+    }
+
+    /* ==========================
+       Main
+    ========================== */
+
+    main {
+        padding: 2rem;
+    }
+
+    /* ==========================
+       View Buttons
+    ========================== */
+
+    .view-buttons {
+        justify-content: flex-end;
+    }
+
+    /* ==========================
+       Grid View
+    ========================== */
+
+    #members.grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .member-card {
+        transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .member-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, .12);
+    }
+
+    /* ==========================
+       List View
+    ========================== */
+
+    #members.list-view .member-card {
+        grid-template-columns: 120px 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    #members.list-view img {
+        width: 100px;
+    }
+
+    /* ==========================
+       Footer
+    ========================== */
+
+    .footer-info {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-info section:last-child {
+        text-align: right;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+}

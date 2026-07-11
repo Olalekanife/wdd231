@@ -1,0 +1,72 @@
+[
+    {
+        "name": "FoodCo Nigeria",
+        "address": "50 Jericho Street, Jericho, Ibadan Nigeria.",
+        "phone": "+234-906-505-0081",
+        "website": "https://foodco.ng",
+        "image": "foodco.webp",
+        "membership": 3,
+        "email": "customerservice@foodco.ng",
+        "industry": "Retail Supermarket"
+    },
+    {
+        "name": "3C HUB",
+        "address": "Fagbamila old ife Road, Ibadan, Oyo State",
+        "phone": "+234-909-649-6690",
+        "website": "https://3chub.com",
+        "image": "3chub.webp",
+        "membership": 3,
+        "email": "online.ng@3chub.com",
+        "industry": "Technology Hub"
+    },
+    {
+        "name": "University Press PLC",
+        "address": "Jericho, Ibadan, Oyo State",
+        "phone": "+234-812-851-6061",
+        "website": "https://universitypressplc.com",
+        "image": "universitypress.webp",
+        "membership": 2,
+        "email": "info@universitypressplc.com",
+        "industry": "Publishing"
+    },
+    {
+        "name": "Sumal Foods",
+        "address": "Sumal Foods Limited, Plot 2A, Block J, Oluyole Industrial Estate. Ring Road, Ibadan",
+        "phone": "+234-815-098-7226",
+        "website": "https://sumalfoods.com",
+        "image": "sumal.webp",
+        "membership": 2,
+        "email": "info@sumalfoods.com",
+        "industry": "Food Manufacturing"
+    },
+    {
+        "name": "Ventura Mall",
+        "address": "Sango-UI Road, Samonda., Ibadan, Nigeria",
+        "phone": "+234-905-390-3206",
+        "website": "https://theventuramall.com",
+        "image": "ventura.webp",
+        "membership": 3,
+        "email": "info@theventuramall.com",
+        "industry": "Shopping Mall"
+    },
+    {
+        "name": "Sweet Sensation",
+        "address": "Mokola, Ibadan, Oyo State",
+        "phone": "+234-805-209-0020",
+        "website": "https://sweetsensation.ng",
+        "image": "sweetsensation.webp",
+        "membership": 1,
+        "email": "info@sweetsensation.ng",
+        "industry": "Restaurant"
+    },
+    {
+        "name": "IITA",
+        "address": "Oyo Road, Ibadan, Oyo State",
+        "phone": "+234-803-403-5283",
+        "website": "https://www.iita.org",
+        "image": "iita.webp",
+        "membership": 3,
+        "email": "iita@cgiar.org",
+        "industry": "Agricultural Research"
+    }
+]

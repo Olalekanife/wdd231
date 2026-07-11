@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70">
+    <rect width="70" height="70" rx="14" fill="#0F172A"></rect>
+
+    <path d="M18 50V28L35 18L52 28V50" fill="none" stroke="#F59E0B" stroke-width="3"></path>
+
+    <line x1="35" y1="18" x2="35" y2="50" stroke="#F59E0B" stroke-width="2"></line>
+
+    <line x1="24" y1="32" x2="46" y2="32" stroke="#F59E0B" stroke-width="2"></line>
+
+    <text x="85" y="30" font-size="18" font-weight="700" font-family="Poppins, Arial, sans-serif" fill="#0F172A">
+        IBADAN
+    </text>
+
+    <text x="85" y="52" font-size="14" font-family="Poppins, Arial, sans-serif" fill="#475569">
+        Chamber of Commerce
+    </text>
+</svg>
