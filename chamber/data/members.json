@@ -50,16 +50,6 @@
         "industry": "Shopping Mall"
     },
     {
-        "name": "Sweet Sensation",
-        "address": "Mokola, Ibadan, Oyo State",
-        "phone": "+234-805-209-0020",
-        "website": "https://sweetsensation.ng",
-        "image": "sweetsensation.webp",
-        "membership": 1,
-        "email": "info@sweetsensation.ng",
-        "industry": "Restaurant"
-    },
-    {
         "name": "IITA",
         "address": "Oyo Road, Ibadan, Oyo State",
         "phone": "+234-803-403-5283",
@@ -68,5 +58,15 @@
         "membership": 3,
         "email": "iita@cgiar.org",
         "industry": "Agricultural Research"
+    },
+    {
+        "name": "Sweet Sensation",
+        "address": "Mokola, Ibadan, Oyo State",
+        "phone": "+234-805-209-0020",
+        "website": "https://sweetsensation.ng",
+        "image": "sweetsensation.webp",
+        "membership": 1,
+        "email": "info@sweetsensation.ng",
+        "industry": "Restaurant"
     }
 ]
