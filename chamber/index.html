@@ -4,35 +4,26 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ibadan Chamber of Commerce | Directory</title>
+    <title>Ibadan Chamber of Commerce | Home</title>
 
     <meta name="description"
-        content="Official directory of the Ibadan Chamber of Commerce featuring businesses, organizations, and entrepreneurs across Ibadan, Oyo State, Nigeria.">
+        content="Welcome to the Ibadan Chamber of Commerce. Supporting businesses, promoting economic growth, and connecting entrepreneurs throughout Ibadan, Nigeria.">
 
     <meta name="author" content="Ifeoluwa Olalekan">
 
     <!-- Favicon -->
-
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
     <!-- Open Graph -->
-
     <meta property="og:title" content="Ibadan Chamber of Commerce">
-
-    <meta property="og:description"
-        content="Discover businesses, entrepreneurs, and organizations within the Ibadan Chamber of Commerce.">
-
+    <meta property="og:description" content="Welcome to the official website of the Ibadan Chamber of Commerce.">
+    <meta property="og:image" content="https://olalekanife.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://olalekanife.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
-    <meta property="og:url" content="https://olalekanife.github.io/wdd231/chamber/directory.html">
-
-    <meta property="og:image" content="https://olalekanife.github.io/wdd231/chamber/images/logo.svg">
-
-    <!-- Google Fonts -->
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,24 +32,17 @@
         rel="stylesheet">
 
     <!-- Font Awesome -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- Styles -->
-
-    <link rel="stylesheet" href="../styles/normalize.css">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-
     <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- Scripts -->
-
+    <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
-
     <script src="scripts/date.js" defer></script>
-
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
 </head>
 
@@ -68,7 +52,7 @@
 
         <div class="logo-name">
 
-            <img src="images/logo.svg" alt="Ibadan Chamber of Commerce Logo" width="60" height="60">
+            <img src="images/logo.svg" alt="Ibadan Chamber Logo" width="60" height="60">
 
             <div>
 
@@ -88,7 +72,7 @@
             <ul class="navigation">
 
                 <li>
-                    <a href="index.html">
+                    <a href="index.html" class="active">
                         Home
                     </a>
                 </li>
@@ -100,7 +84,7 @@
                 </li>
 
                 <li>
-                    <a class="active" href="directory.html">
+                    <a href="directory.html">
                         Directory
                     </a>
                 </li>
@@ -119,29 +103,88 @@
 
     <main>
 
-        <h1>Business Directory</h1>
+        <!-- Hero -->
 
-        <div class="view-buttons">
+        <section class="hero">
 
-            <button type="button" id="grid">
+            <picture>
 
-                <i class="fa-solid fa-table-cells-large"></i>
+                <source media="(min-width:768px)" srcset="images/hero-large.webp">
 
-                Grid
+                <img src="images/hero-small.webp" alt="Ibadan city skyline">
 
-            </button>
+            </picture>
 
-            <button type="button" id="list">
+            <div class="hero-content">
 
-                <i class="fa-solid fa-list"></i>
+                <h1>Empowering Businesses in Ibadan</h1>
 
-                List
+                <p>
+                    Building stronger businesses through collaboration,
+                    innovation, networking, and community growth.
+                </p>
 
-            </button>
+                <a href="join.html" class="cta-button">
 
-        </div>
+                    Join the Chamber
 
-        <section id="members" class="grid-view">
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Information -->
+
+        <section class="home-grid">
+
+            <!-- Events -->
+
+            <section class="card">
+
+                <h2>Current Events</h2>
+
+                <ul>
+
+                    <li>Business Networking Breakfast - July 20</li>
+
+                    <li>Entrepreneurship Workshop - July 24</li>
+
+                    <li>SME Business Expo - August 2</li>
+
+                </ul>
+
+            </section>
+
+            <!-- Weather -->
+
+            <section class="card">
+
+                <h2>Weather</h2>
+
+                <div id="weather">
+
+                    <p id="temperature"></p>
+
+                    <p id="description"></p>
+
+                    <div id="forecast"></div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- Spotlights -->
+
+        <section class="spotlights">
+
+            <h2>Business Spotlights</h2>
+
+            <div id="spotlight-container">
+
+            </div>
 
         </section>
 
@@ -159,13 +202,9 @@
                 Nigeria
             </p>
 
-            <p>
-                info@ibadanchamber.org
-            </p>
+            <p>info@ibadanchamber.org</p>
 
-            <p>
-                +234 800 123 4567
-            </p>
+            <p>+234 800 123 4567</p>
 
         </section>
 

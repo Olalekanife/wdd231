@@ -100,3 +100,38 @@
     }
 
 }
+
+/* ==========================================
+   WEEK 3 - HOME PAGE (DESKTOP)
+========================================== */
+
+@media only screen and (min-width: 768px) {
+
+    /* Hero */
+
+    .hero img {
+        height: 550px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    /* Events & Weather */
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    /* Spotlights */
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
